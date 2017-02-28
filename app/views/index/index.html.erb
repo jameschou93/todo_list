@@ -1,0 +1,19 @@
+<div ng-app="app">
+  <div ng-controller="stuffCtrl">
+    <h3>Add to the list</h3>
+      <input ng-model="newTask">
+      <button ng-click="addThing(newTask)">Add the thing</button>
+        <ul>
+          <div ng-repeat="cheese in cheeses track by $index">
+          <li>
+              <div ng-class="{complete: cheese.complete}" ng-click="complete(cheese)">{{cheese.task}}</div>
+              <button ng-click="removeThing($index)">Remove Task</button>
+          </li>
+        </ul>
+      
+    </div>
+    <h1> Tasks Remaining: {{counter()}}</h1>
+    <button ng-click="clean()">Remove Completed Tasks</button>
+  </div>
+</div>
+

@@ -1,0 +1,19 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.complete {
+  color: blue;
+  text-decoration: line-through;
+}
+
+body {
+  text-align: center
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-bottom: 5px;
+  border: solid;
+  border-bottom: solid 1px
+}
